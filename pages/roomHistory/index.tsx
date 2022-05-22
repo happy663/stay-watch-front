@@ -28,7 +28,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const RoomHistoryIndex: NextPage<Props> = (props) => {
   const { fallback } = props;
   return (
-    <SWRConfig value={{ fallback }}>
+    <SWRConfig>
       <Layout>
         <RoomHistory />
       </Layout>
